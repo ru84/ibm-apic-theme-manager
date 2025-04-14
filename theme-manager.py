@@ -4,47 +4,6 @@ IBM API Connect Developer Portal Theme Management Script
 
 This script manages theme deployment for IBM API Connect Developer Portal across different environments (e.g. production, staging).
 It provides functionality to check status, upload themes, and revert to default themes.
-
-Usage examples:
-  # Check status
-  ./theme_manager.py status
-  
-  # Upload a theme
-  ./theme_manager.py upload
-  
-  # Revert to the default theme
-  ./theme_manager.py revert --env production
-  
-  # Specify a different theme
-  ./theme_manager.py upload --theme my_custom_theme
-  
-  # Clear cache
-  ./theme_manager.py cache-clear
-  
-  # Login to OpenShift
-  ./theme_manager.py login
-
-Configuration:
-  This script uses a JSON configuration file (theme_manager_config.json) with the following structure:
-  
-  {
-    "defaults": {
-      "environment": "production"
-    },
-    "themes": {
-      "active_theme": "my_new_theme",
-      "default_theme": "connect_theme"
-    },
-    "environments": {
-      "production": {
-        "oc_project": "apiconnect",
-        "pod_name": "apiconnect-ptl-s1444oim-www-0",
-        "site_name": "developer.myapic.com",
-        "platform_path": "/var/aegir/platforms/devportal-10.x-10.0.8.2-20250311-1629",
-        "server_url": "https://api.ocp.myapic.com:6443"
-      }
-    }
-  }
 """
 
 import argparse
