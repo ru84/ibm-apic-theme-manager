@@ -12,26 +12,17 @@ This document outlines the process for creating a new release of the IBM API Con
    - Add date to the new version entry
    - Document all significant changes, additions, and fixes
 
-2. **Update Version in the Script** (if applicable)
-
-   If the script has a version variable, update it:
-
-   ```python
-   # In theme-manager.py
-   __version__ = "X.Y.Z"  # Update this line
-   ```
-
-3. **Commit Changes**
+2. **Commit Changes**
 
    Commit all final changes to the main branch:
 
    ```bash
-   git add CHANGELOG.md theme-manager.py
+   git add CHANGELOG.md
    git commit -m "Prepare release vX.Y.Z"
    git push origin main
    ```
 
-4. **Create and Push a Tag**
+3. **Create and Push a Tag**
 
    Create a new version tag and push it to trigger the release workflow:
 
@@ -40,7 +31,7 @@ This document outlines the process for creating a new release of the IBM API Con
    git push origin vX.Y.Z
    ```
 
-5. **Monitor GitHub Actions**
+4. **Monitor GitHub Actions**
 
    The release workflow will automatically:
 
@@ -51,7 +42,7 @@ This document outlines the process for creating a new release of the IBM API Con
 
    We can monitor the progress in the Actions tab of the GitHub repository.
 
-6. **Verify the Release**
+5. **Verify the Release**
 
    Once the workflow completes:
 
@@ -70,7 +61,6 @@ We follow semantic versioning (SEMVER):
 ## Release Checklist
 
 - [ ] Update CHANGELOG.md
-- [ ] Update version in code (if applicable)
 - [ ] Commit all changes
 - [ ] Create and push the version tag
 - [ ] Verify the release workflow completed successfully
