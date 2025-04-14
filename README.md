@@ -2,6 +2,18 @@
 
 A Python-based tool to manage themes for the IBM API Connect Developer Portal. This utility streamlines theme development, deployment, and management across different environments.
 
+## Motivation
+
+When developing a theme for the IBM API Connect Developer Portal, the traditional workflow is extremely time-consuming. Developers must:
+1. Create a ZIP archive of the local theme
+2. Disable the existing custom theme to avoid name conflicts
+3. Revert to a default theme
+4. Delete the custom theme
+5. Upload the ZIP file for the same custom theme with new code
+6. Re-activate the theme
+
+This tool automates this entire process, drastically reducing development time and eliminating error-prone manual steps. With a single command, you can compile, package, and deploy your theme changes to any environment.
+
 ## Features
 
 - Upload and activate custom themes
