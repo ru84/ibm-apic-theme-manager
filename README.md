@@ -32,21 +32,34 @@ This tool automates this entire process, drastically reducing development time a
 
 ## Configuration
 
-Create a `theme_manager_config.json` file with your environment settings:
+Copy the sample configuration file and customize it for your environment:
+
+```bash
+cp theme_manager_config.sample.json theme_manager_config.json
+```
+
+Then edit `theme_manager_config.json` with your specific environment settings:
 
 ```json
 {
   "defaults": {
-    "environment": "production"
+    "environment": "development"
   },
   "themes": {
-    "active_theme": "my_new_theme",
+    "active_theme": "my_custom_theme",
     "default_theme": "connect_theme"
   },
   "environments": {
+    "development": {
+      "oc_project": "apiconnect-dev",
+      "pod_name": "apiconnect-ptl-dev-www-0",
+      "site_name": "dev.myapic.com",
+      "platform_path": "/var/aegir/platforms/devportal-10.x-10.0.8.2-20250311-1629",
+      "server_url": "https://api.ocp-dev.myapic.com:6443"
+    },
     "production": {
       "oc_project": "apiconnect",
-      "pod_name": "apiconnect-ptl-s1444oim-www-0",
+      "pod_name": "apiconnect-ptl-prod-www-0",
       "site_name": "developer.myapic.com",
       "platform_path": "/var/aegir/platforms/devportal-10.x-10.0.8.2-20250311-1629",
       "server_url": "https://api.ocp.myapic.com:6443"
