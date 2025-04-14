@@ -1,0 +1,32 @@
+{
+  "defaults": {
+    "environment": "development"
+  },
+  "themes": {
+    "active_theme": "my_custom_theme",
+    "default_theme": "connect_theme"
+  },
+  "environments": {
+    "development": {
+      "oc_project": "apiconnect-dev",
+      "pod_name": "apiconnect-ptl-dev-www-0",
+      "site_name": "dev.myapic.com",
+      "platform_path": "/var/aegir/platforms/devportal-10.x-10.0.8.2-20250311-1629",
+      "server_url": "https://api.ocp-dev.myapic.com:6443"
+    },
+    "staging": {
+      "oc_project": "apiconnect-staging",
+      "pod_name": "apiconnect-ptl-staging-www-0",
+      "site_name": "staging.myapic.com",
+      "platform_path": "/var/aegir/platforms/devportal-10.x-10.0.8.2-20250311-1629",
+      "server_url": "https://api.ocp-staging.myapic.com:6443"
+    },
+    "production": {
+      "oc_project": "apiconnect",
+      "pod_name": "apiconnect-ptl-prod-www-0",
+      "site_name": "developer.myapic.com",
+      "platform_path": "/var/aegir/platforms/devportal-10.x-10.0.8.2-20250311-1629",
+      "server_url": "https://api.ocp.myapic.com:6443"
+    }
+  }
+}
