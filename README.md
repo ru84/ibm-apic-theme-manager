@@ -236,4 +236,10 @@ Then edit `theme_manager_config.json` with your specific environment settings:
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the GNU General Public License v3.0 with additional terms - see the LICENSE file for details.
+
+Key points:
+- You must provide attribution when using or modifying this software
+- You cannot sell this software or services primarily based on it
+- Modifications must also be open source under the same license
+- Source code must be made available when distributing the software.
